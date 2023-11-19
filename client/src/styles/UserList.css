@@ -1,0 +1,123 @@
+/* UserList component styles */
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.user-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.create-team-block {
+  width: 100%; /* Make the block take full width */
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Style for the team name input and create team button */
+.create-team-block h2 {
+  margin-bottom: 10px;
+}
+
+.create-team-block input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.create-team-block button {
+  width: 100%; /* Make the button take full width */
+  padding: 10px 0; /* Adjust padding */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-team-block button:hover {
+  background-color: #45a049;
+}
+
+/* Style for the form to add a new user */
+.add-user-form {
+  width: 100%; /* Make the block take full width */
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.add-user-form h2 {
+  margin-bottom: 10px;
+}
+
+.add-user-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.add-user-form input[type="number"],
+.add-user-form input[type="text"],
+.add-user-form input[type="email"],
+.add-user-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.add-user-form button[type="submit"] {
+  width: 100%; /* Make the button take full width */
+  padding: 10px 0; /* Adjust padding */
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-user-form button[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+ul.react-paginate {
+  margin-bottom: 2rem;
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0 5rem;
+}
+
+ul.react-paginate li a {
+  border-radius: 7px;
+  padding: 8px 16px;
+  border: gray 1px solid;
+  cursor: pointer;
+}
+ul.react-paginate li.previous a,
+ul.react-paginate li.next a,
+ul.react-paginate li.break a {
+  border-color: transparent;
+}
+ul.react-paginate li.selected a {
+  background-color: #0366d6;
+  border-color: transparent;
+  color: white;
+  min-width: 32px;
+}
+ul.react-paginate li.disabled a {
+  color: grey;
+}
+ul.react-paginate li.disable,
+ul.react-paginate li.disabled a {
+  cursor: default;
+}

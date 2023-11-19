@@ -1,0 +1,37 @@
+/* UserListPage.css */
+
+.user-list-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #333;
+  }
+  
+  /* Additional styling for the loading and error messages */
+  .loading,
+  .error {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .loading {
+    color: #3498db; /* Loading message color */
+  }
+  
+  .error {
+    color: #e74c3c; /* Error message color */
+  }
+  

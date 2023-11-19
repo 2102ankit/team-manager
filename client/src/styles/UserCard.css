@@ -1,0 +1,63 @@
+/* UserCard.css */
+
+.user-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-card {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+  text-align: justify; /* Updated to justify the text */
+}
+
+/* Additional styling for availability text */
+.user-card p.availability {
+  font-weight: bold;
+  color: ${(props) => (props.available ? "#27ae60" : "#e74c3c")};
+}
+
+/* Styling for the button */
+.add-team {
+  width: max-content;
+  padding: 10px 50px;
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  border: 2px solid white;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+  margin-top: 10px;
+}
+
+.add-team:hover {
+  background-color: white;
+  color: #333;
+  border-color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
