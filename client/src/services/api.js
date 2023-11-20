@@ -4,7 +4,7 @@ import axios from "axios";
 import dotenv from "dotenv";
 
 const api = axios.create({
-  baseURL: "http://localhost:3001/api", // Update with your backend server URL
+  baseURL: "https://team-manager-server.onrender.com/api", // Update with your backend server URL
 });
 
 export const getUsers = (page, limit, filters) => {
