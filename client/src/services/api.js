@@ -1,10 +1,10 @@
 // services/api.js
 
 import axios from "axios";
-import dotenv from "dotenv"
+import dotenv from "dotenv";
 
 const api = axios.create({
-  baseURL: process.env.ORIGIN || "http://localhost:3001/api", // Update with your backend server URL
+  baseURL: "http://localhost:3001/api", // Update with your backend server URL
 });
 
 export const getUsers = (page, limit, filters) => {
